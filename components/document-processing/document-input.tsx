@@ -8,8 +8,7 @@ interface DocumentInputProps {
   category: string;
 }
 
-const BACKEND_URL =
-  "https://anurag33gaikwad-legal-summarizer-billsum-api.hf.space";
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function DocumentInput({ category }: DocumentInputProps) {
   const [textContent, setTextContent] = useState("");
